@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url(https://media.istockphoto.com/photos/abstract-digits-floating-picture-id1368203696?b=1&k=20&m=1368203696&s=170667a&w=0&h=uONXNpheBSF1X_Ib-GU22RON-KNB7EYmLHqpXmxFsfU=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+  width: 350px;
+  height: 600px;
+  background-color: rgb(71, 96, 65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 200px;
+  transition: 1s ease;
+}
+
+section:hover{
+  transform: scale(1.02);
+  box-shadow: #fff 0 0 10px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: 10rem 3rem 3rem 3rem 3rem;
+  column-gap: 5px;
+  row-gap: 25px;
+}
+
+div {
+  background-color: rgb(71, 96, 65);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section article > div:nth-of-type(1) {
+  background: rgb(214, 213, 213);
+  grid-column: 1 / span 4;
+  border-radius: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  overflow: hidden;
+  justify-content: end;
+  padding-right: 20px;
+  font-size: 60px;
+  border: 2px solid gold;
+  
+}
+
+section article > div:nth-of-type(18) {
+  grid-column: 1 / span 2;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid gold;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(159, 156, 156);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(118, 117, 117);
+  transform: scale(1.1);
+  color: gold;
+  border-color: #fff;
+}
+
+
+
+
+
+article > div:nth-of-type(18) button {
+  background-color: rgb(159, 156, 156);
+  border-radius: 10px;
+  width: 17.5rem;
+  height: 50px;
+  font-size: 42px;
+}
+article > div:nth-of-type(18) button:hover {
+  background-color: rgb(118, 117, 117);
+}
+
+input {
+  font-size: 50px;
+  width: 280px;
+  height: 150px;
+  text-align: right;
+  border-radius: 20px;
+}

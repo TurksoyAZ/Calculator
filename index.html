@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <div id="output"></div>
+
+          <div><button onclick="deletElement()">></button></div>
+          <div><button onclick="addElement('.')" value=".">.</button></div>
+          <div><button onclick="addElement(' % ')">%</button></div>
+
+          <div><button onclick="addElement(' - ')">-</button></div>
+
+          <div><button onclick="addElement(9)">9</button></div>
+          <div><button onclick="addElement(8)">8</button></div>
+          <div><button onclick="addElement(7)">7</button></div>
+          <div><button onclick="addElement(' / ')">/</button></div>
+          <div><button onclick="addElement(6)">6</button></div>
+          <div><button onclick="addElement(5)">5</button></div>
+          <div><button onclick="addElement(4)">4</button></div>
+          <div><button onclick="addElement(' * ')">*</button></div>
+
+          <div><button onclick="addElement(3)">3</button></div>
+          <div><button onclick="addElement(2)">2</button></div>
+          <div><button onclick="addElement(1)">1</button></div>
+          <div><button onclick="addElement(' + ')">+</button></div>
+
+          <div><button onclick="ergebnis()">=</button></div>
+
+          <div><button onclick="addElement(0)">0</button></div>
+          <div><button onclick="deletElementAll()">Del</button></div>
+        </article>
+      </section>
+    </main>
+
+    <!-- External script -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
